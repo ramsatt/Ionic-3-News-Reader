@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="head">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,12 +7,153 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content>
+  <div class='csslider1 autoplay '>
+    <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
+    <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
+    <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
+    <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
+    <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
+    <ul>
+      <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+        <img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;">
+      </div>
+      <li class='num0 img'>
+        <a href="" target=""><img src='http://cssslider.com/sliders/pen/images/buns.jpg' alt='Buns' title='Buns' /> </a>
+      </li>
+      <li class='num1 img'>
+        <a href="" target=""><img src='http://cssslider.com/sliders/pen/images/buns.jpg' alt='Croissant' title='Croissant' /> </a>
+      </li>
+      <li class='num2 img'>
+        <a href="" target=""><img src='http://cssslider.com/sliders/pen/images/buns.jpg' alt='Lemon pie' title='Lemon pie' /> </a>
+      </li>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    </ul>
+    <div class='cs_description'>
+      <label class='num0'>
+        <span class="cs_title"><span class="cs_wrapper">White House stays silent on anti-Semitic connection of Trump's anti-CNN video</span></span>
+      </label>
+      <label class='num1'>
+        <span class="cs_title"><span class="cs_wrapper">Croissant</span></span>
+      </label>
+      <label class='num2'>
+        <span class="cs_title"><span class="cs_wrapper">Lemon pie</span></span>
+      </label>
+    </div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <div class='cs_arrowprev'>
+      <label class='num0' for='cs_slide1_0'></label>
+      <label class='num1' for='cs_slide1_1'></label>
+      <label class='num2' for='cs_slide1_2'></label>
+    </div>
+    <div class='cs_arrownext'>
+      <label class='num0' for='cs_slide1_0'></label>
+      <label class='num1' for='cs_slide1_1'></label>
+      <label class='num2' for='cs_slide1_2'></label>
+    </div>
+
+    <div class='cs_bullets'>
+      <label class='num0' for='cs_slide1_0'>
+        <span class='cs_point'></span>
+        <span class='cs_thumb'><img src='http://cssslider.com/sliders/pen/tooltips/buns.jpg' alt='Buns' title='Buns' /></span>
+      </label>
+      <label class='num1' for='cs_slide1_1'>
+        <span class='cs_point'></span>
+        <span class='cs_thumb'><img src='http://cssslider.com/sliders/pen/tooltips/croissant.jpg' alt='Croissant' title='Croissant' /></span>
+      </label>
+      <label class='num2' for='cs_slide1_2'>
+        <span class='cs_point'></span>
+        <span class='cs_thumb'><img src='http://cssslider.com/sliders/pen/tooltips/lemonpie.jpg' alt='Lemon pie' title='Lemon pie' /></span>
+      </label>
+    </div>
+  </div>
+  <!-- End cssSlider.com -->
+  <ion-list>
+    <ion-list-header color="news_head">
+      Recent
+    </ion-list-header>
+    <ion-item [navPush]="'NewsdetailPage'">
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header color="news_head">
+      Political
+    </ion-list-header>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header color="news_head">
+      Sports
+    </ion-list-header>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/favicon.ico">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
 </ion-content>
